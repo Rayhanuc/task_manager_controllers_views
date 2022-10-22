@@ -1,5 +1,7 @@
 class AccessController < ApplicationController
 
+
+  layout 'application'
   # before_action :confirm_logged_in, except: [:new, :create]
   skip_before_action :confirm_logged_in, only: [:new, :create]
   # display menu
