@@ -3,6 +3,11 @@
 <div class="tasks new">
   <h2>Create Task</h2>
 
+  <%#
+  @task.errors.add(:name)
+  @task.errors.add(:description)
+  %>
+
   <%= form_for(@task) do |f| %>
     <% # url: tasks_path, method: 'post' %>
 
