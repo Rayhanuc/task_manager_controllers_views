@@ -13,5 +13,8 @@
 
 
 <% content_for(:script) do %>
-  <script>alert('Welcome!');</script>
+  <% name = "Kevin" %>
+  <%# name = "Kevin'); alert('Gotcha" %>
+  <%= javascript_tag("alert('welcome, #{j(name)}!');") %>
+  <%# <script>alert('Welcome!');</script> %>
 <% end %>
